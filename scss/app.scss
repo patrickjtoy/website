@@ -2,25 +2,25 @@
 @import "../bower_components/foundation/scss/foundation";
 
 /* variables */
+$white: rgba(255, 255, 255, 1);
 $primary-blue: rgba(0, 140, 186, 1);
 
 ::selection {
 	background: $primary-blue;
-	color: rgba(255, 255, 255, 1);
+	color: $white;
 }
 ::-moz-selection {
 	background: $primary-blue;
-	color: rgba(255, 255, 255, 1);
+	color: $white;
 }
 
 .portrait {
 	margin-top: 25px;
-}
-
-.portrait img {
-	max-width: 15em;
-	height: auto;
-	border-radius: 145px;
-	margin: 10px 0;
-	border: 5px solid $primary-blue;
+	img {
+		max-width: 15em;
+		height: auto;
+		border-radius: 145px;
+		margin: 10px 0;
+		border: 5px solid $primary-blue;
+	}
 }
