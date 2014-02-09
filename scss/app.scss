@@ -1,6 +1,15 @@
 @import "settings";
 @import "../bower_components/foundation/scss/foundation";
 
+/* mixins */
+@mixin border-radius ($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-o-border-radius: $radius;
+	border-radius: $radius;
+}
+
 /* variables */
 $white: rgba(255, 255, 255, 1);
 $primary-blue: rgba(0, 140, 186, 1);
@@ -19,7 +28,7 @@ $primary-blue: rgba(0, 140, 186, 1);
 	img {
 		max-width: 15em;
 		height: auto;
-		border-radius: 145px;
+		@include border-radius(145px);
 		margin: 10px 0;
 		border: 5px solid $primary-blue;
 	}
