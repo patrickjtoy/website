@@ -1,7 +1,7 @@
 /bower_components/*
 /.sass-cache/*
 *.DS_Store
-/stylesheets/*
+/scss/*
 .bowerrc
 bower.json
 config.rb
