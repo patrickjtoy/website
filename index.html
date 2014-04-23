@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en" ng-app="">
+<html class="no-js" lang="en" ng-app="app">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,8 +26,7 @@
 					<ul class="off-canvas-list">
 						<li><label>Menu</label></li>
 						<li><a href="#">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#profile">Profile</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</aside>
@@ -37,6 +36,7 @@
 						<div class="portrait text-center"><img src="app/img/portrait.png" alt="Portrait of Patrick J Toy" /></div>
 					</div>
 				</div>
+				<maincontent></maincontent>
 				<a class="exit-off-canvas"></a>
 			</div>
 		</div>
@@ -47,8 +47,7 @@
 					<section class="top-bar-section">
 						<ul class="right">
 							<li class="active"><a href="#">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#profile">Profile</a></li>
+							<li><a href="#portfolio">Portfolio</a></li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</section>
@@ -60,39 +59,10 @@
 					<div class="heading text-center"><h1>Patrick J Toy</h1></div>
 				</div>
 			</div>
-		</div>
-		<!-- All Screens -->
-		<div class="row">
-			<div class="large-12 columns">
-				<div ng-controller="AppCtrl">{{ data.message }}</div>
-				<p class="lorem panel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, animi, veniam, quia officia adipisci sed alias hic deleniti saepe esse dolore at nemo velit placeat dolor dolorem atque repudiandae fuga.</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="large-12 columns">
-				<h2>About</h2>
-				<p class="lorem panel"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, laboriosam, est ad dolor reiciendis quasi expedita impedit possimus saepe enim amet sit doloremque voluptatibus culpa praesentium qui magnam debitis a!</span>
-				<span>Autem, similique, commodi, beatae, alias ipsa eum corrupti optio rem nulla cumque nisi fugit explicabo repudiandae aperiam est ipsam eaque corporis sapiente nesciunt dignissimos? Voluptas, ipsa ullam maxime suscipit consectetur.</span>
-				<span>Non, vel, veritatis, fuga quidem tenetur hic repudiandae obcaecati consequatur eos recusandae ullam fugiat in necessitatibus perferendis itaque quasi doloribus nesciunt dignissimos incidunt consequuntur voluptate ad ratione. Tempore, neque, adipisci!</span></p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="large-12 columns">
-				<h2>Profile</h2>
-				<p class="lorem panel"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, laboriosam, est ad dolor reiciendis quasi expedita impedit possimus saepe enim amet sit doloremque voluptatibus culpa praesentium qui magnam debitis a!</span>
-				<span>Autem, similique, commodi, beatae, alias ipsa eum corrupti optio rem nulla cumque nisi fugit explicabo repudiandae aperiam est ipsam eaque corporis sapiente nesciunt dignissimos? Voluptas, ipsa ullam maxime suscipit consectetur.</span>
-				<span>Non, vel, veritatis, fuga quidem tenetur hic repudiandae obcaecati consequatur eos recusandae ullam fugiat in necessitatibus perferendis itaque quasi doloribus nesciunt dignissimos incidunt consequuntur voluptate ad ratione. Tempore, neque, adipisci!</span></p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="large-12 columns">
-				<h2>Contact</h2>
-				<p class="lorem panel"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, laboriosam, est ad dolor reiciendis quasi expedita impedit possimus saepe enim amet sit doloremque voluptatibus culpa praesentium qui magnam debitis a!</span>
-				<span>Autem, similique, commodi, beatae, alias ipsa eum corrupti optio rem nulla cumque nisi fugit explicabo repudiandae aperiam est ipsam eaque corporis sapiente nesciunt dignissimos? Voluptas, ipsa ullam maxime suscipit consectetur.</span>
-				<span>Non, vel, veritatis, fuga quidem tenetur hic repudiandae obcaecati consequatur eos recusandae ullam fugiat in necessitatibus perferendis itaque quasi doloribus nesciunt dignissimos incidunt consequuntur voluptate ad ratione. Tempore, neque, adipisci!</span></p>
-			</div>
+			<maincontent></maincontent>
 		</div>
 		<script type="text/javascript" src="vendor/js/angular.min.js"></script>
+		<script type="text/javascript" src="vendor/js/angular-route.min.js"></script>
 		<script type="text/javascript" src="vendor/js/jquery.min.js"></script>
 		<script type="text/javascript" src="vendor/js/foundation.min.js"></script>
 		<script type="text/javascript" src="app/js/app.min.js"></script>
